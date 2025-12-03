@@ -1,0 +1,20 @@
+0 -> 99 range, overflows/underflows
+[sensing some potential modulo usage here for optimal strats]
+L/R for direction (L == - | R == +)
+Starts at 50
+Real PW is number of times left on 0
+
+Shown Math for Example:
+[some are split into multiple operations for my simple brain to handle over/underflows]
+L68 -> 50 - 51 = 99 - 17 = 82
+L30 -> 82 - 30 = 52
+R48 -> 52 + 48 = 0
+L5 -> 0 - 1 = 99 - 4 = 95
+R60 -> 95 + 5 = 0 + 55 = 55
+L55 -> 55 - 55 = 0
+L1 -> 0 - 1 = 99
+L99 -> 99 - 99 = 0
+R14 -> 0 + 14 = 14
+L82 -> 14 - 15 = 99 - 67 = 32
+
+Password == 3
