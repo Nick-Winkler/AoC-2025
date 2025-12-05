@@ -55,7 +55,7 @@ public class CodeBreaker(FileInfo input)
         }
         catch (OutOfMemoryException)
         {
-            Console.WriteLine("The file is too big to process for your machine");
+            Console.WriteLine("You must have a really long line in your file. I didn't put the text here since it'd probably muck up the terminal.");
             return null;
         }
 
