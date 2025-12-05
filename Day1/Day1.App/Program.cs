@@ -2,7 +2,7 @@
 
 var fileInfo = new FileInfo(Path.Combine(Directory.GetCurrentDirectory(), "Input.txt"));
 var cb = new CodeBreaker(fileInfo);
-var password = cb.GetPasswordFromFile();
+var password = cb.GetPasswordFromFile(CodeBreaker.PasswordMethod.CountPassingOrLandingOnZero);
 
 if (password == null)
 {

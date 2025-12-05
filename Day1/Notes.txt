@@ -18,3 +18,27 @@ R14 -> 0 + 14 = 14
 L82 -> 14 - 15 = 99 - 67 = 32
 
 Password == 3
+
+
+-----------------
+Second Star Notes
+-----------------
+
+New password is the count the number of times any at any point 0 is passed (or landed on)
+[I get the feeling there is also a math operation I can do to figure this one out quickly]
+Should handle operations like R1000 which would add ten to the password counter
+[This seems to basically be how I did the math earlier so I can probably use the same calculations and just count ALL the rotations]
+[Will likely need to reduce down to < the dialModulo and then do simple logic]
+
+L68 -> 50 - 51 = 99 - 17 = 82 [1]
+L30 -> 82 - 30 = 52
+R48 -> 52 + 48 = 0 [2]
+L5 -> 0 - 1 = 99 - 4 = 95 
+R60 -> 95 + 5 = 0 + 55 = 55 [3]
+L55 -> 55 - 55 = 0 [4]
+L1 -> 0 - 1 = 99
+L99 -> 99 - 99 = 0 [5]
+R14 -> 0 + 14 = 14
+L82 -> 14 - 15 = 99 - 67 = 32 [6]
+
+Password == 6

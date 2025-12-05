@@ -29,6 +29,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Link>TestInput.txt</Link>
     </None>
+    <None Include="..\TestInputChangesPlus100.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>TestInputChangesPlus100.txt</Link>
+    </None>
     <None Include="..\LargeTestInput.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Link>LargeTestInput.txt</Link>
